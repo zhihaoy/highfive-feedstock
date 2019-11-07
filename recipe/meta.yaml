@@ -1,6 +1,6 @@
 {% set name = "HighFive" %}
-{% set version = "2.1" %}
-{% set sha256 = "cc9e93baecc939c6984f220643338092b7e71ef666cb1e1c80f3dfde0eaa89f2" %}
+{% set version = "2.1.1" %}
+{% set sha256 = "52cffeda0d018f020f48e5460c051d5c2031c3a3c82133a21527f186a0c1650e" %}
 
 package:
   name: {{ name|lower }}
@@ -52,3 +52,5 @@ extra:
     - wolfv
     - SylvainCorlay
     - JohanMabille
+    - ferdonline
+    - tdegeus

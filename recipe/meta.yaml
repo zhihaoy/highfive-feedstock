@@ -5,7 +5,7 @@
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}_{{ githash }}
+  version: 2.0.99_{{ githash }}  # fake a version to live with xtensor-io
 
 source:
   url: https://github.com/BlueBrain/HighFive/archive/{{ githash }}.zip

@@ -3,7 +3,7 @@ cmake -G Ninja ^
   -DCMAKE_BUILD_TYPE=Release ^
   -DHIGHFIVE_UNIT_TESTS=OFF ^
   -DHIGHFIVE_EXAMPLES=OFF ^
-  -DUSE_BOOST=OFF ^
+  -DHIGHFIVE_USE_BOOST=OFF ^
   %SRC_DIR%
 if errorlevel 1 exit 1
 

@@ -13,7 +13,7 @@ _cmake_config=(
     -DCMAKE_BUILD_TYPE=Release
     -DHIGHFIVE_UNIT_TESTS=OFF
     -DHIGHFIVE_EXAMPLES=OFF
-    -DUSE_BOOST=OFF
+    -DHIGHFIVE_USE_BOOST=OFF
 )
 
 cmake -G Ninja "${_cmake_config[@]}" "${SRC_DIR}"

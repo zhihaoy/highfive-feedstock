@@ -1,18 +1,18 @@
 {% set name = "HighFive" %}
 {% set version = "2.1.1" %}
-{% set sha256 = "52cffeda0d018f020f48e5460c051d5c2031c3a3c82133a21527f186a0c1650e" %}
+{% set githash = "2f07be8" %}
+{% set sha256 = "f9ac24e4deafc21e6f3f04e4d9d243115489deaca69104c3fa9ea09ccf966b01" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: {{ version }}_{{ githash }}
 
 source:
-  fn: HighFive-v{{ version }}.tar.gz
-  url: https://github.com/BlueBrain/HighFive/archive/v{{ version }}.tar.gz
+  url: https://github.com/BlueBrain/HighFive/archive/{{ githash }}.zip
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: True  # [win and vc<14]
 
 requirements:
